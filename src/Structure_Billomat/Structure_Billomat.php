@@ -83,175 +83,175 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 						'description'          => 'Creates a customer.',
 						'needs_authentication' => true,
 						'params'               => array(
-							'number_pre'            => array(
+							'number_pre'               => array(
 								'description' => 'Prefix',
 								'type'        => 'string'
 							),
-							'number'                => array(
+							'number'                   => array(
 								'description' => 'Sequential number.',
 								'type'        => 'integer'
 							),
-							'number_length'         => array(
+							'number_length'            => array(
 								'description' => 'Minimum length of the customer number (will be filled up with leading nulls)',
 								'type'        => 'integer'
 							),
-							'name'                  => array(
+							'name'                     => array(
 								'description' => 'Company name of the client.',
 								'type'        => 'string',
 							),
-							'street'                => array(
+							'street'                   => array(
 								'description' => 'Street of the client.',
 								'type'        => 'string',
 							),
-							'city'                  => array(
+							'city'                     => array(
 								'description' => 'City of the client.',
 								'type'        => 'string',
 							),
-							'state'                 => array(
+							'state'                    => array(
 								'description' => 'State of the client.',
 								'type'        => 'string',
 							),
-							'country_code'          => array(
+							'country_code'             => array(
 								'description' => 'Country code in ISO 3166 Alpha-2 format.',
 								'type'        => 'string',
 							),
-							'first_name'            => array(
+							'first_name'               => array(
 								'description' => 'First name of the client.',
 								'type'        => 'string',
 							),
-							'last_name'             => array(
+							'last_name'                => array(
 								'description' => 'Last name of the client.',
 								'type'        => 'string',
 							),
-							'salutation'            => array(
+							'salutation'               => array(
 								'description' => 'Salutation of the client.',
 								'type'        => 'string',
 							),
-							'phone'                 => array(
+							'phone'                    => array(
 								'description' => 'Phone number of the client.',
 								'type'        => 'string',
 							),
-							'fax'                   => array(
+							'fax'                      => array(
 								'description' => 'Fax number of the client.',
 								'type'        => 'string',
 							),
-							'mobile'                => array(
+							'mobile'                   => array(
 								'description' => 'Mobile number of the client.',
 								'type'        => 'string',
 							),
-							'email'                 => array(
+							'email'                    => array(
 								'description' => 'Email address of the client',
 								'type'        => 'string',
 							),
-							'www'                   => array(
+							'www'                      => array(
 								'description' => 'Website of the client',
 								'type'        => 'string',
 							),
-							'tax_number'            => array(
+							'tax_number'               => array(
 								'description' => 'Tax number of the client',
 								'type'        => 'string',
 							),
-							'vat_number'            => array(
+							'vat_number'               => array(
 								'description' => 'Vat number of the client',
 								'type'        => 'string',
 							),
-							'bank_account_number'   => array(
+							'bank_account_number'      => array(
 								'description' => 'Bank account number.',
 								'type'        => 'string',
 							),
-							'bank_account_owner'    => array(
+							'bank_account_owner'       => array(
 								'description' => 'Bank account owner.',
 								'type'        => 'string',
 							),
-							'bank_number'           => array(
+							'bank_number'              => array(
 								'description' => 'Bank Identification Code.',
 								'type'        => 'string',
 							),
-							'bank_name'             => array(
+							'bank_name'                => array(
 								'description' => 'Bank name.',
 								'type'        => 'string',
 							),
-							'bank_swift'            => array(
+							'bank_swift'               => array(
 								'description' => 'SWIFT/BIC.',
 								'type'        => 'string',
 							),
-							'bank_iban'             => array(
+							'bank_iban'                => array(
 								'description' => 'IBAN.',
 								'type'        => 'string',
 							),
-							'sepa_mandate'          => array(
+							'sepa_mandate'             => array(
 								'description' => 'Mandate reference of a SEPA debit mandate.',
 								'type'        => 'string',
 							),
-							'sepa_mandate_date'     => array(
+							'sepa_mandate_date'        => array(
 								'description' => 'Date of the SEPA debit mandate.',
 								'type'        => 'string',
 							),
-							'locale'                => array(
+							'locale'                   => array(
 								'description' => 'Scheme of the area of the customer',
 								'type'        => 'string',
 							),
-							'tax_rule'              => array(
+							'tax_rule'                 => array(
 								'description' => 'Tax, no tax or country.',
 								'type'        => 'string',
 							),
-							'net_gross'             => array(
+							'net_gross'                => array(
 								'description' => 'Price base.',
 								'type'        => 'string',
 							),
-							'default_payment_types' => array(
+							'default_payment_types'    => array(
 								'description' => 'Payment types (for example CASH, BANK_TRANSFER, PAYPAL..). Different payment types can be added comma separated.',
 								'type'        => 'string',
 							),
-							'note'             => array(
+							'note'                     => array(
 								'description' => 'Notes for customer.',
 								'type'        => 'string',
 							),
-							'reduction'             => array(
+							'reduction'                => array(
 								'description' => 'Discount in percent.',
 								'type'        => 'float',
 							),
-							'discount_rate_type'             => array(
+							'discount_rate_type'       => array(
 								'description' => 'Type of standard value for discount.',
 								'type'        => 'string',
 							),
-							'discount_rate'             => array(
+							'discount_rate'            => array(
 								'description' => 'Discount in percent.',
 								'type'        => 'float',
 							),
-							'discount_days_type'             => array(
+							'discount_days_type'       => array(
 								'description' => 'Type of standard value for discount period.',
 								'type'        => 'string',
 							),
-							'discount_days'             => array(
+							'discount_days'            => array(
 								'description' => 'Discount period in days after bill date.',
 								'type'        => 'float',
 							),
-							'due_days_type'             => array(
+							'due_days_type'            => array(
 								'description' => 'Type of standard value for due.',
 								'type'        => 'integer',
 							),
-							'reminder_due_days_type'             => array(
+							'reminder_due_days_type'   => array(
 								'description' => 'Type of standard value for due reminder.',
 								'type'        => 'string',
 							),
-							'reminder_due_days'             => array(
+							'reminder_due_days'        => array(
 								'description' => 'Due reminder.',
 								'type'        => 'integer',
 							),
-							'offer_validity_days_type'             => array(
+							'offer_validity_days_type' => array(
 								'description' => 'Type of standard value offer validity.',
 								'type'        => 'string',
 							),
-							'offer_validity_days'             => array(
+							'offer_validity_days'      => array(
 								'description' => 'Offer validity in days.',
 								'type'        => 'integer',
 							),
-							'currency_code'             => array(
+							'currency_code'            => array(
 								'description' => 'Currency ISO code.',
 								'type'        => 'string',
 							),
-							'price_group'             => array(
+							'price_group'              => array(
 								'description' => 'Price group',
 								'type'        => 'integer',
 							)
