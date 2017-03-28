@@ -35,7 +35,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 				'header_name' => 'BillomatApiKey',
 			);
 
-			$this->routes[ '/clients' ] = array(
+			$this->routes['/clients'] = array(
 				'methods' => array(
 					'GET'  => array(
 						'description'          => 'Lists customers without checking upper- and lowercase.',
@@ -260,7 +260,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 				),
 			);
 
-			$this->routes[ '/clients/myself' ] = array(
+			$this->routes['/clients/myself'] = array(
 				'methods' => array(
 					'GET' => array(
 						'description'          => 'Returns all data of the own account.',
@@ -270,7 +270,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 				),
 			);
 
-			$this->routes[ '/clients/(?P<id>[\\d]+)' ] = array(
+			$this->routes['/clients/(?P<id>[\\d]+)'] = array(
 				'methods' => array(
 					'GET' => array(
 						'description'          => 'Removes the uploaded profile banner for the authenticating user. Returns HTTP 200 upon success.',
