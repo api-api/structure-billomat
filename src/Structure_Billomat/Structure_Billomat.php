@@ -2,7 +2,7 @@
 /**
  * Structure_Billomat class
  *
- * @package APIAPIStructureDummyName
+ * @package APIAPIStructureBillomat
  * @since   1.0.0
  */
 

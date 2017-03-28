@@ -2,7 +2,7 @@
 /**
  * Structure loader.
  *
- * @package APIAPIStructureDummyName
+ * @package APIAPIStructureBillomat
  * @since 1.0.0
  */
 
