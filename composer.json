@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "APIAPI\\Structure_Dummy_Name\\": "src/Structure_Billomat/"
+      "APIAPI\\Structure_Billomat\\": "src/Structure_Billomat/"
     },
     "files": [
       "src/structure-billomat.php"
@@ -39,7 +39,7 @@
   },
   "require": {
     "api-api/core": "*",
-    "api-api/authenticator-x": "*"
+    "api-api/authenticator-x-account": "*"
   },
   "require-dev": {
     "codeclimate/php-test-reporter": "dev-master"
