@@ -31,8 +31,14 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 			$this->title         = 'Billomat API';
 			$this->description   = 'Allows to access and manage the data in your Billomat account.';
 			$this->base_uri      = 'https://{billomatID}.billomat.net/api/';
-			$this->authenticator = 'x-account';
 
+			// The following parameter is internal since it is part of authentication.
+			$this->base_uri_params['billomatID'] = array(
+				'description' => 'billomatID of the account.',
+				'internal'    => true,
+			);
+
+			$this->authenticator = 'x-account';
 			$this->authentication_data_defaults = array(
 				'placeholder_name' => 'billomatID',
 				'header_name'      => 'BillomatApiKey',
