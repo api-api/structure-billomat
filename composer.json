@@ -38,8 +38,8 @@
     ]
   },
   "require": {
-    "api-api/core": "*",
-    "api-api/authenticator-x-account": "*"
+    "api-api/core": "dev-master",
+    "api-api/authenticator-x-account": "dev-master"
   },
   "require-dev": {
     "codeclimate/php-test-reporter": "dev-master"
