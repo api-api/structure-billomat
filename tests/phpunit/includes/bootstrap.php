@@ -12,6 +12,7 @@ require_once $root_dir . '/src/structure-billomat.php';
 
 
 require_once dirname(__FILE__ ) . '/test-structure-class.php';
+require_once dirname(__FILE__ ) . '/test-billomat-class.php';
 
 // disable xdebug backtrace
 if ( function_exists( 'xdebug_disable' ) ) {
