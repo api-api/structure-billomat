@@ -12,15 +12,19 @@ class Billomat_TestCase extends Structure_TestCase {
 	protected $api;
 
 	protected function setUp() {
+
+		$billomat_account = getenv( 'BILLOMAT_ACCOUNT' );
+		$billomat_token = getenv( 'BILLOMAT_TOKEN' );
+
 		$config = array(
 			'transporter'            => 'curl',
 			'billomat'                => array(
 				'authentication_data' => array(
-					'account'    => $_ENV['BILLOMAT_ACCOUNT'],
-					'token' => $_ENV['BILLOMAT_TOKEN'],
-					'billomatID'    => $_ENV['BILLOMAT_ACCOUNT'],
+					'account'    => $billomat_account,
+					'token' => $billomat_token,
+					'billomatID'    => $billomat_account,
 				),
-				'billomatID'    => $_ENV['BILLOMAT_ACCOUNT']
+				'billomatID'    => $billomat_account
 			),
 		);
 
