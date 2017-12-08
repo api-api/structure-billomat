@@ -19,6 +19,7 @@ class Billomat_TestCase extends Structure_TestCase {
 					'account'    => 'awesome',
 					'token' => 'e1db94ee6d161d59f02e67c18133a078'
 				),
+				'billomatID'    => 'awesome'
 			),
 		);
 
