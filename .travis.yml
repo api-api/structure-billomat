@@ -1,17 +1,17 @@
 language: php
-
 php:
-  - 5.6
-  - 7.0
-  - 7.1
-  - 7.2
-
+- 5.6
+- 7.0
+- 7.1
+- 7.2
 script:
 - vendor/bin/phpunit --version
 - vendor/bin/phpunit
-
 before_install:
-  - if [[ ${TRAVIS_PHP_VERSION:0:3} == "5.5" ]]; then composer require --dev --no-update phpunit/phpunit ~4; fi
-
+- if [[ ${TRAVIS_PHP_VERSION:0:3} == "5.5" ]]; then composer require --dev --no-update
+  phpunit/phpunit ~4; fi
 install:
-  - composer install
+- composer install
+env:
+  global:
+    secure: DynW3mhvZ/VOP39VFTOtV7j21ux/gY1JBonVmXd7eGCOgEwXeCBbaG0nytPn4Njnv+QtPxmZOMZSN8wEw/2wbTvLGp9cpDvQe6lmC+JgHQyu7/EnyQHjh08ahpJNhhOdSVYiAdD68jrbLc+QzRS4M8fxXXYFAnH2dUojqvfVpoh6i213swY2VpTu0jVwcf2qxwu7e2tRpARmkJKkw1ulcmTKDu1vCmqE7o05oozJuLDwOb1x29lAICQQrRYhYkDCCdIQtqUcwUt5qO6cPixUemo1iJdGjWmVHTwd2d8z7nLyBZdVRMQVe3tvVmFzu76mWKyAubfqKaYCSfrbqxhyDaFEyX7u3GV7swO6Gi3nZRc6KGHzggjtELa3DiOf5hpsouPl5e8RptuPbcxSISi94fYLrACGQ4EKtZ7PVNwvKEbIbin7wEKfuEEyvcJaOgSKhP5xr4/u6SrMK3WtpIgsNf/Zjq9/Icn2ahaevSadPOLnXNAq2EzY1pgYCe8HyXL6QQ98KNZS7GyiiogH3BEZfz2jdhUhDDe5GmKKCuM4itHNGpnGsd321laxXlPkL1T1fNOBw81Nngu4G+TlUUh2zI2b3tRcfcezjUgkO6Ck3XdxrUj6Nqi1gvRolrdMTqqmQ8MH3ua2BlVCip2FI2rPU4KXxswVj1RhmQ/FBmPIHkU=
