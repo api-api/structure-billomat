@@ -39,8 +39,8 @@
   },
   "require": {
     "api-api/core": "dev-master",
-    "api-api/authenticator-x": "dev-master",
-    "api-api/authenticator-x-account": "dev-master"
+    "api-api/authenticator-x-account": "dev-master",
+    "api-api/transporter-curl": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7",

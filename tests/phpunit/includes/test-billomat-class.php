@@ -2,25 +2,26 @@
 
 class Billomat_TestCase extends Structure_TestCase {
 	/**
-	 * @var $api
+	 * @var \APIAPI\Core\APIAPI
 	 */
-	private $api;
+	protected $apiapi;
 
-	public function init() {
+	/**
+	 * @var \APIAPI\Structure_Billomat\Structure_Billomat
+	 */
+	protected $api;
+
+	protected function setUp() {
 		$config = array(
 			'transporter'            => 'curl',
-			'config_updater'         => true,
-			'config_updater_storage' => 'cookie',
-			'twitter'                => array(
-				'mode'                => '',
-				'authenticator'       => 'twitter-oauth1',
+			'billomat'                => array(
 				'authentication_data' => array(
-					'consumer_key'    => 'Hvx7agOw1KFKNZsFvWIgIZXoI',
-					'consumer_secret' => 'itDGjT9raslfvXez41mB0YcdVu94fap2ZdgDHgSM3wBmyHoWhW',
+					'account'    => 'awesome',
+					'token' => 'e1db94ee6d161d59f02e67c18133a078'
 				),
 			),
 		);
 
-		$this->api = apiapi( 'my-api', $config );
+		$this->apiapi = apiapi( 'test-api', $config );
 	}
 }
