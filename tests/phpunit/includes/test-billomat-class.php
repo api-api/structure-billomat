@@ -17,7 +17,8 @@ class Billomat_TestCase extends Structure_TestCase {
 			'billomat'                => array(
 				'authentication_data' => array(
 					'account'    => $_ENV['billomat_account'],
-					'token' => $_ENV['billomat_token']
+					'token' => $_ENV['billomat_token'],
+					'billomatID'    => $_ENV['billomat_account'],
 				),
 				'billomatID'    => $_ENV['billomat_account']
 			),
