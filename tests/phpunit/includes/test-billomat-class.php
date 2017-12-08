@@ -28,6 +28,8 @@ class Billomat_TestCase extends Structure_TestCase {
 			),
 		);
 
+		print_r( $config );
+
 		$this->apiapi = apiapi( 'test-api', $config );
 	}
 }
