@@ -22,13 +22,9 @@ class Billomat_TestCase extends Structure_TestCase {
 				'authentication_data' => array(
 					'account'    => $billomat_account,
 					'token' => $billomat_token,
-					'billomatID'    => $billomat_account,
 				),
-				'billomatID'    => $billomat_account
 			),
 		);
-
-		print_r( $config );
 
 		$this->apiapi = apiapi( 'test-api', $config );
 	}
