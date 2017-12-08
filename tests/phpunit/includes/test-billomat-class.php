@@ -16,10 +16,10 @@ class Billomat_TestCase extends Structure_TestCase {
 			'transporter'            => 'curl',
 			'billomat'                => array(
 				'authentication_data' => array(
-					'account'    => 'awesome',
-					'token' => 'e1db94ee6d161d59f02e67c18133a078'
+					'account'    => $_ENV['billomat_account'],
+					'token' => $_ENV['billomat_token']
 				),
-				'billomatID'    => 'awesome'
+				'billomatID'    => $_ENV['billomat_account']
 			),
 		);
 
