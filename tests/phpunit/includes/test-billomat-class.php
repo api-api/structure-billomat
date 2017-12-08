@@ -16,11 +16,11 @@ class Billomat_TestCase extends Structure_TestCase {
 			'transporter'            => 'curl',
 			'billomat'                => array(
 				'authentication_data' => array(
-					'account'    => $_ENV['billomat_account'],
-					'token' => $_ENV['billomat_token'],
-					'billomatID'    => $_ENV['billomat_account'],
+					'account'    => $_ENV['BILLOMAT_ACCOUNT'],
+					'token' => $_ENV['BILLOMAT_TOKEN'],
+					'billomatID'    => $_ENV['BILLOMAT_ACCOUNT'],
 				),
-				'billomatID'    => $_ENV['billomat_account']
+				'billomatID'    => $_ENV['BILLOMAT_ACCOUNT']
 			),
 		);
 
