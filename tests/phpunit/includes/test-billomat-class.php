@@ -24,6 +24,7 @@ class Billomat_TestCase extends Structure_TestCase {
 					'token' => $billomat_token,
 				),
 			),
+			'billomatID' => 'awesome'
 		);
 
 		$this->apiapi = apiapi( 'test-api', $config );
