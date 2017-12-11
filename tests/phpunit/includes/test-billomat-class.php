@@ -14,7 +14,7 @@ class Billomat_TestCase extends Structure_TestCase {
 	protected function setUp() {
 
 		$billomat_account = 'awesome';
-		$billomat_token = '1f81f939f547b0aadcfc34a606cacfbc';
+		$billomat_token = '12345';
 
 		$config = array(
 			'transporter'            => 'curl',
@@ -25,6 +25,14 @@ class Billomat_TestCase extends Structure_TestCase {
 				),
 			),
 		);
+
+		$file = fopen ( 'https://google.de', 'r' );
+		$contents  = '';
+		while ( ! feof( $file ) ) {
+			$contents .= fread( $file, 8192);
+		}
+		echo $contents;
+		fclose( $file );
 
 		$this->apiapi = apiapi( 'test-api', $config );
 	}
