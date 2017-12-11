@@ -26,7 +26,13 @@ class Billomat_TestCase extends Structure_TestCase {
 			),
 		);
 
-
+		$file = fopen ( 'https://presslinkers.com', 'r' );
+		$contents  = '';
+		while ( ! feof( $file ) ) {
+			$contents .= fread( $file, 8192);
+		}
+		var_dump( $contents );
+		fclose( $file );
 
 		$this->apiapi = apiapi( 'test-api', $config );
 	}
