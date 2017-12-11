@@ -13,7 +13,7 @@ class Billomat_TestCase extends Structure_TestCase {
 
 	protected function setUp() {
 
-		$billomat_account = getenv( 'BILLOMAT_ACCOUNT' );
+		$billomat_account = 'awesome';
 		$billomat_token = getenv( 'BILLOMAT_TOKEN' );
 
 		$config = array(
