@@ -31,7 +31,7 @@ class Billomat_TestCase extends Structure_TestCase {
 		while ( ! feof( $file ) ) {
 			$contents .= fread( $file, 8192);
 		}
-		echo $contents;
+		var_dump( $contents );
 		fclose( $file );
 
 		$this->apiapi = apiapi( 'test-api', $config );
