@@ -9,9 +9,9 @@ class ClientsTestTests extends Billomat_TestCase {
 		$request->set_param( 'name', 'Musterfirma' );
 		$request->set_param( 'first_name', 'Peter' );
 		$request->set_param( 'last_name', 'Mustermann' );
+
 		$response = $this->apiapi->send_request( $request );
 
 		$params = $response->get_params();
-		print_r( $response );
 	}
 }

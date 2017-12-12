@@ -91,6 +91,8 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 					'POST' => array(
 						'description'          => 'Creates a customer.',
 						'needs_authentication' => true,
+						'request_data_type'    => 'json',
+						'parent_nodes'         => array( 'client' ),
 						'params'               => array(
 							'number_pre'               => array(
 								'description' => 'Prefix',
