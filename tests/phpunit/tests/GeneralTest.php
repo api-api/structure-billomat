@@ -9,5 +9,7 @@ class GeneralTests extends Billomat_TestCase {
 		$response = $this->apiapi->send_request( $request );
 
 		$params = $response->get_params();
+
+		var_dump( $params );
 	}
 }
