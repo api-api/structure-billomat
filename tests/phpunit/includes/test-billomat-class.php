@@ -14,7 +14,7 @@ class Billomat_TestCase extends Structure_TestCase {
 	protected function setUp() {
 
 		$billomat_account = 'awesome';
-		$billomat_token = 'd44e969fdbaaf48116816130f380cf33';
+		$billomat_token = 'b1e8ccc82d0e5ad9c35cd028b51cf438';
 
 		$config = array(
 			'transporter'            => 'curl',
