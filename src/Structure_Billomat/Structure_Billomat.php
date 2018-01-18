@@ -2,13 +2,14 @@
 /**
  * Structure_Billomat class
  *
- * @package APIAPIStructureBillomat
+ * @package APIAPI\Structure_Billomat
  * @since   1.0.0
  */
 
 namespace APIAPI\Structure_Billomat;
 
 use APIAPI\Core\Structures\Structure;
+use APIAPI\Core\Request\Method;
 
 if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 
@@ -24,8 +25,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 		 * handle further initialization functionality, like setting the authenticator
 		 * class and default authentication data.
 		 *
-		 * @since  1.0.0
-		 * @access protected
+		 * @since 1.0.0
 		 */
 		protected function setup() {
 			$this->title         = 'Billomat API';
@@ -46,7 +46,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 
 			$this->routes['/clients'] = array(
 				'methods' => array(
-					'GET'  => array(
+					Method::GET  => array(
 						'description'          => 'Lists customers without checking upper- and lowercase.',
 						'needs_authentication' => true,
 						'params'               => array(
@@ -88,7 +88,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 							),
 						),
 					),
-					'POST' => array(
+					Method::POST => array(
 						'description'          => 'Creates a customer.',
 						'needs_authentication' => true,
 						'request_data_type'    => 'json',
@@ -273,7 +273,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 
 			$this->routes['/clients/myself'] = array(
 				'methods' => array(
-					'GET' => array(
+					Method::GET => array(
 						'description'          => 'Returns all data of the own account.',
 						'needs_authentication' => true,
 						'params'               => array(),
@@ -283,7 +283,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 
 			$this->routes['/clients/(?P<id>[\\d]+)'] = array(
 				'methods' => array(
-					'GET' => array(
+					Method::GET => array(
 						'description'          => 'Removes the uploaded profile banner for the authenticating user. Returns HTTP 200 upon success.',
 						'needs_authentication' => true,
 						'params'               => array(),

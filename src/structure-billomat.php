@@ -2,7 +2,7 @@
 /**
  * Structure loader.
  *
- * @package APIAPIStructureBillomat
+ * @package APIAPI\Structure_Billomat
  * @since 1.0.0
  */
 
