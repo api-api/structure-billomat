@@ -29,6 +29,7 @@ if ( ! class_exists( 'APIAPI\Structure_Billomat\Structure_Billomat' ) ) {
 		 */
 		protected function setup() {
 			$this->title         = 'Billomat API';
+
 			$this->description   = 'Allows to access and manage the data in your Billomat account.';
 			$this->base_uri      = 'https://{billomatID}.billomat.net/api/';
 
